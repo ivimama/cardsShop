@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
 
-    // 🟩 Добавяне на нов коментарFFF
     if (reviewForm) {
         reviewForm.addEventListener("submit", async function (event) {
             event.preventDefault();
@@ -168,7 +167,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 const data = await res.json();
 
                 if (res.ok) {
-                    // Добавяме новия коментар в DOM само при успех
                     const newDiv = document.createElement("div");
                     newDiv.className = "review";
                     newDiv.textContent = reviewText;
@@ -184,7 +182,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         });
 
-        // Enter key като submit
         reviewInput.addEventListener("keypress", function (event) {
             if (event.key === 'Enter') {
                 event.preventDefault();
