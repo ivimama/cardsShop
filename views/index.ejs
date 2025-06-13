@@ -1,0 +1,84 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-lg-12">
+                <% if (message) { %>
+                 <div class="alert alert-dismissible fade show alert-<%= message.type %>" role="alert">
+                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong><%= message.message %></strong>
+                 </div>
+                <% } %>
+                <div class="table-responsive">
+                    <% if (users != '') { %>
+                      <table class="table table-striped text-center">
+                        <thead>
+                            <tr class="table-dark">
+                                <th>ID</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% users.forEach((row,index) => { %>
+                             <tr class="align-middle">
+                                <td><%= index+1 %></td>
+                                <td><img src="<%= row.image %>" width="50" class="img-thumbnail" alt="" srcset=""></td>
+                                <td><%= row.name  %></td>
+                                <td><%= row.quantity  %></td>
+                                <td><%= row.description  %></td>
+                                <td><%= '$'+row.price  %></td>
+
+                                <td>
+                                    <a href="/edit/<%=row._id  %>" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
+                                    
+                                    <a href="/delete/<%=row._id  %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+                                </td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                    <% } else{%>
+                        <h1 class="text-center text-secondary mt-5">No users found in the db</h1>
+                   <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-lg-12">
+                    <% if (comments.length > 0) { %>
+                      <table class="table table-striped text-center">
+                        <thead>
+                            <tr class="table-dark">
+                                <th>Card Name</th>
+                                <th>Content</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% comments.forEach((comment) => { %>
+                             <tr class="align-middle">
+                                <td><%= comment.cardName  %></td>
+                                <td><%=comment.content  %></td>
+
+                                <td> 
+                                    <a href="/comments/delete/<%= comment._id %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+                                </td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                    <% } else{%>
+                        <h1 class="text-center text-secondary mt-5">No comments found in the db</h1>
+                   <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('layout/footer') %>

@@ -1,0 +1,273 @@
+body{
+    
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: #f2eeed;
+}
+
+
+.home-page{
+    background-image: url("roth-melinda-Qd7kQJUqrXA-unsplash-scaled.jpg"), none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li a{
+    display: inline-block;
+    float: right;
+    background-color: whitesmoke;
+    color: black;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    opacity: 1;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item{
+    margin: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: transform 0.2s;
+    background-color: black;
+    opacity: 1;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    
+}
+
+.item h2{
+    margin: 0 0 0 15px 0;
+    font-size: 1.2em;
+    color: #f2eeed;
+   
+    height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    
+}
+.item a{
+    display: inline-block;
+    background-color: #270480;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: blackground-color 0.2s;
+    opacity: 1;
+
+} 
+
+.item a:hover{
+    background-color: #1e0363;
+}
+
+.item p{
+    margin: 10px 0;
+    color: #FF5555;
+    opacity: 1;
+    
+}
+
+.item img{
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.book-detail img {
+    max-width: 300 px;
+    height: auto;
+    display: block;
+    margin: 20 px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    margin: 20px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    border-color: #333;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+.review{
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border-left: 4px solid #007bff;
+}
+
+.back-link{
+    display: inline-block;
+    margin: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover{
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin: 80px 0;
+    font-size: 4em;
+}
+
+h2{
+    color: #333;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.container img{
+    /* width: 600px;
+    height: 450px;
+    max-width: 500px; */
+    object-fit: cover;
+    display: block;
+    margin: px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.over {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Разстояние между изображението и текста */
+  
+    margin-top: 20px;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.over img{
+    width: 500px;
+    height: 500px;
+}
+
+.text h2{
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+.text{
+    max-width: 350px; /* Контролира ширината на текста */
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+}
+.description{
+    width: 300px;
+    margin-bottom: 200px;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.secondaryImg{
+    gap: 80px;
+}
+
+.secondaryImg img{
+    max-width: 300px; 
+    max-height: none;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+   
+}
+
+.container p{
+    color: #333;
+    /* background-color: #f2eeed;
+    padding: 10px; */
+}
+
+h1{
+    
+        font-family: "Sixtyfour Convergence", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        
+        font-variation-settings:
+          "BLED" 0,
+          "SCAN" 0,
+          "XELA" 0,
+          "YELA" 0;
+        
+}

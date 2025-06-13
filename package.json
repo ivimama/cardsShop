@@ -1,0 +1,26 @@
+{
+  "name": "node_2_app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "i": "^0.3.7",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.0",
+    "npm": "^11.4.1"
+  }
+}

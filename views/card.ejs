@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=item.name %>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <%= item.name %>
+        </h1>
+
+        <div class="over">
+            <img src="/<%= item.image %>" alt="<%= item.name %>" />
+
+            <% if (item.secondaryImages && item.secondaryImages.length) { %>
+                <div class="secondaryImg">
+                    <% item.secondaryImages.forEach(function(img) { %>
+                        <img src="<% item.image %>" alt="Extra image for <%= item.name %>" />
+                        <% }); %>
+                </div>
+                <% } %>
+
+                    <div class="text">
+                        <h2>Brief Description</h2>
+                        <p class="description">
+                            <%= item.description %>
+                        </p>
+                        <h2>Price: $<%= item.price %>
+                        </h2>
+                    </div>
+        </div>
+
+        <h2>Full Description</h2>
+        <p>
+            <%= item.fullDescription %>
+        </p>
+
+        <h2>Purchase From</h2>
+        <form id="purchaseForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="nameInput" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+            <input type="submit" value="Purchase">
+        </form>
+
+
+
+
+        <h2>Submit Your Review</h2>
+        <form id="reviewFrom">
+            <label for="review">Your Review:</label><br>
+            <textarea id="reviewInput" name="review" required></textarea><br>
+            <input type="submit" value="Submit Review">
+        </form>
+        <h2>User Reviews</h2>
+        <div class="reviewContainers">
+            <div class="review">"Good"</div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

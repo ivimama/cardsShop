@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cocktail</title>
+     <link rel="stylesheet" href="styles.css"> 
+     
+  </head>
+  <body>
+    <div class="container">
+        <h1>Cocktail</h1>
+        
+        <div class="over">
+            <img src="10045062_Bicycle_Cocktail-Recipes_Contents.png" alt="Bicycle_Waterproof_Contents" />
+            <div class="secondaryImg">
+                <img src="10045062_Bicycle_Cocktail-Recipes_Front.png" alt="Bicycle_Waterproof_Contents" />
+                <img src="10045062_Bicycle_Cocktail-Recipes_Back.png"Bicycle_Waterproof_Contents" />
+            </div>
+            <div class="text">
+                <h2>Brief Description</h2>
+                <p class="description">Bicycle Cocktail Playing Cards</p>
+                <h2>Price: $9.99</h2>
+            </div> 
+        </div>
+        <h2>Full Description</h2>
+        <p>
+            If you love the glitz and glamour of The Great Gatsby as much as we do, then you are in luck! A few lucky fans will have the opportunity to discover golden tickets tucked into select Bicycle Cocktail decks.What's better than a round of cards? A round of cards with a round of drinks! The possibilities are (almost) endless with 52 different cocktail recipes on the 52 card faces. With copper and silver highlights on the tuck case, the Bicycle Cocktail deck is perfect addition to your next party!
+        </p>
+        <h2>Purchase From</h2>
+        <form id="purchaseForm">
+          <label for="name">Name:</label><br>
+          <input type="text" id="nameInput" name="name" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="quantity">Quantity:</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+          <input type="submit" value="Purchase">
+        </form>
+
+        
+        <h2>Submit Your Review</h2>
+        <form id="reviewFrom"> 
+          <label for="review">Your Review:</label><br>
+          <textarea id="reviewInput" name="review" required></textarea><br>
+          <input type="submit" value="Submit Review">
+        </form>
+
+        <h2>User Reviews</h2>
+        <div class="reviewContainers">
+        <div class="review">"Good"</div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
